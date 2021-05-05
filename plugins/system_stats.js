@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, WhatsBAT Ekibinin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
+            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, Mockirin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```Co-Developer```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
         }
         else {
             const pow = '*Powered by WhatsBAT*'
@@ -54,7 +54,7 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, WhatsBAT Ekibinin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
+            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, Mockirin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```Co-Developer```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
         }
         else {
             const pow = '*Powered by WhatsBAT*'
@@ -83,7 +83,7 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, WhatsBAT Ekibinin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
+            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, Mockirin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```Co-Developer```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
         }
         else {
             const pow = '*Powered by WhatsBAT*'
