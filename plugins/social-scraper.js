@@ -13,51 +13,51 @@ const { errorMessage, infoMessage } = require('../helpers')
 const Lang = Language.getString('instagram')
 const Tlang = Language.getString('tiktok')
 
-if (cn.WORKTYPE == 'private') {
-	
-Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
-	
-    const userName = match[1]
-    
-    if (!userName) return await message.sendMessage(errorMessage('Lütfen kullanıcı adını doğru girdiğinizden emin olun.'))
-	
-    await message.sendMessage(infoMessage('Profil bilgileri yükleniyor.'))
+if (Config.WORKTYPE == 'private') {
 
-    await axios
-      .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
-      .then(async (response) => {
-        const {
-          profile_hd,
-          username,
-          bio,
-          followers,
-          following,
-          full_name,
-          is_private,
-        } = response.data.result
+    Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
-        const profileBuffer = await axios.get(profile_hd, {
-          responseType: 'arraybuffer',
-        })
+        const userName = match[1]
 
-        const msg = `
-        *${Lang.NAME}*: ${full_name}
-        *${Lang.USERNAME}*: ${username}
-        *${Lang.BIO}*: ${bio}
-        *${Lang.FOLLOWERS}*: ${followers}
-        *${Lang.FOLLOWS}*: ${following}
-        *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+        if (!userName) return await message.sendMessage(errorMessage('Lütfen geçerli bir kullanıcı adı giriniz.'))
 
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg,
-        })
-      })
-      .catch(
-        async (err) => await message.sendMessage(errorMessage(userName + 'Kullanıcının bilgilerinin tam olduğundan emin olun.')),
-      )
-  },
-)
+        await message.sendMessage(infoMessage('Profil yükleniyor...'))
 
+        await axios
+          .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
+          .then(async (response) => {
+            const {
+              profile_hd,
+              username,
+              bio,
+              followers,
+              following,
+              full_name,
+              is_private,
+            } = response.data.result
+
+            const profileBuffer = await axios.get(profile_hd, {
+              responseType: 'arraybuffer',
+            })
+
+            const msg = `
+            *${Lang.NAME}*: ${full_name}
+            *${Lang.USERNAME}*: ${username}
+            *${Lang.BIO}*: ${bio}
+            *${Lang.FOLLOWERS}*: ${followers}
+            *${Lang.FOLLOWS}*: ${following}
+            *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+
+            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+              caption: msg,
+            })
+          })
+          .catch(
+            async (err) => await message.sendMessage(errorMessage(userName + 'kullanıcısının bilgilerinin tam olduğundan emin olunuz.')),
+          )
+      },
+    )
+}
     /*
     Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
 
@@ -89,93 +89,94 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc
     )
     */
 }
-else if (cn.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
-Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+    Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.sendMessage(errorMessage('Lütfen geçerli bir kullanıcı adı giriniz.'))
+
+        await message.sendMessage(infoMessage('Profil yükleniyor...'))
+
+        await axios
+          .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
+          .then(async (response) => {
+            const {
+              profile_hd,
+              username,
+              bio,
+              followers,
+              following,
+              full_name,
+              is_private,
+            } = response.data.result
+
+            const profileBuffer = await axios.get(profile_hd, {
+              responseType: 'arraybuffer',
+            })
+
+            const msg = `
+            *${Lang.NAME}*: ${full_name}
+            *${Lang.USERNAME}*: ${username}
+            *${Lang.BIO}*: ${bio}
+            *${Lang.FOLLOWERS}*: ${followers}
+            *${Lang.FOLLOWS}*: ${following}
+            *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+
+            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+              caption: msg,
+            })
+          })
+          .catch(
+            async (err) => await message.sendMessage(errorMessage(userName + 'kullanıcısının bilgilerinin tam olduğundan emin olunuz.')),
+          )
+      },
+    );
 	
-    const userName = match[1]
-    
-    if (!userName) return await message.sendMessage(errorMessage('Lütfen kullanıcı adını doğru girdiğinizden emin olun.'))
-	
-    await message.sendMessage(infoMessage('Profil bilgileri yükleniyor.'))
+	Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
-    await axios
-      .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
-      .then(async (response) => {
-        const {
-          profile_hd,
-          username,
-          bio,
-          followers,
-          following,
-          full_name,
-          is_private,
-        } = response.data.result
+        const userName = match[1]
 
-        const profileBuffer = await axios.get(profile_hd, {
-          responseType: 'arraybuffer',
-        })
+        if (!userName) return await message.sendMessage(errorMessage('Lütfen geçerli bir kullanıcı adı giriniz.'))
 
-        const msg = `
-        *${Lang.NAME}*: ${full_name}
-        *${Lang.USERNAME}*: ${username}
-        *${Lang.BIO}*: ${bio}
-        *${Lang.FOLLOWERS}*: ${followers}
-        *${Lang.FOLLOWS}*: ${following}
-        *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+        await message.sendMessage(infoMessage('Profil yükleniyor...'))
 
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg,
-        })
-      })
-      .catch(
-        async (err) => await message.sendMessage(errorMessage(userName + 'Kullanıcının bilgilerinin tam olduğundan emin olun.')),
-      )
-  },
-);
-	
-Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
-	
-    const userName = match[1]
-    
-    if (!userName) return await message.sendMessage(errorMessage('Lütfen kullanıcı adını doğru girdiğinizden emin olun.'))
-	
-    await message.sendMessage(infoMessage('Profil bilgileri yükleniyor.'))
+        await axios
+          .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
+          .then(async (response) => {
+            const {
+              profile_hd,
+              username,
+              bio,
+              followers,
+              following,
+              full_name,
+              is_private,
+            } = response.data.result
 
-    await axios
-      .get(`https://videfikri.com/api/igstalk/?username=${userName}`)
-      .then(async (response) => {
-        const {
-          profile_hd,
-          username,
-          bio,
-          followers,
-          following,
-          full_name,
-          is_private,
-        } = response.data.result
+            const profileBuffer = await axios.get(profile_hd, {
+              responseType: 'arraybuffer',
+            })
 
-        const profileBuffer = await axios.get(profile_hd, {
-          responseType: 'arraybuffer',
-        })
+            const msg = `
+            *${Lang.NAME}*: ${full_name}
+            *${Lang.USERNAME}*: ${username}
+            *${Lang.BIO}*: ${bio}
+            *${Lang.FOLLOWERS}*: ${followers}
+            *${Lang.FOLLOWS}*: ${following}
+            *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
 
-        const msg = `
-        *${Lang.NAME}*: ${full_name}
-        *${Lang.USERNAME}*: ${username}
-        *${Lang.BIO}*: ${bio}
-        *${Lang.FOLLOWERS}*: ${followers}
-        *${Lang.FOLLOWS}*: ${following}
-        *${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
-
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg,
-        })
-      })
-      .catch(
-        async (err) => await message.sendMessage(errorMessage(userName + 'Kullanıcının bilgilerinin tam olduğundan emin olun.')),
-      )
-  },
-);
+            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+              caption: msg,
+            })
+          })
+          .catch(
+            async (err) => await message.sendMessage(errorMessage(userName + 'kullanıcısının bilgilerinin tam olduğundan emin olunuz.')),
+          )
+      },
+    )
+}
     /*
     Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: false, desc: Tlang.TİKTOK }, async (message, match) => {
 
