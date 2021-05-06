@@ -36,7 +36,6 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc
           is_private,
         } = response.data.result
 
-        const profileBuffer = await axios.get(profile_pic_url_hd, {
         const profileBuffer = await axios.get(profile_hd, {
           responseType: 'arraybuffer',
         })
@@ -113,7 +112,6 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, usage: Lang.USAGE, des
           is_private,
         } = response.data.result
 
-        const profileBuffer = await axios.get(profile_pic_url_hd, {
         const profileBuffer = await axios.get(profile_hd, {
           responseType: 'arraybuffer',
         })
@@ -157,7 +155,6 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, usage: Lang.USAGE, desc
           is_private,
         } = response.data.result
 
-        const profileBuffer = await axios.get(profile_pic_url_hd, {
         const profileBuffer = await axios.get(profile_hd, {
           responseType: 'arraybuffer',
         })
