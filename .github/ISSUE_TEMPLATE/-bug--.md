@@ -24,7 +24,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Users, please complete the following actions.**
 - WhatApp Package Name
-- WhatsAsena Version
+- WhatsBAT Version
 - Work Type (Private || Public)
 
 ##
