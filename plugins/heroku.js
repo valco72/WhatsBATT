@@ -1,10 +1,3 @@
-/* 
-Heroku plugin for WhatsAsena - W4RR10R
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
-*/
-
 const Asena = require('../events');
 const Config = require('../config');
 const Heroku = require('heroku-client');
@@ -26,122 +19,122 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '' && message.reply_message) {
-        return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
+        return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text);
     }
     else if (match[1] !== '' && !message.reply_message) {
-        return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text); 
+        return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
     }
     else if (match[1] == '' && !message.reply_message) {
-        return await message.client.sendMessage(message.jid, Langr.NEED_REPLY, MessageType.text); 
+        return await message.client.sendMessage(message.jid, Langr.NEED_REPLY, MessageType.text);
     }
     else if (match[1] == 'ban' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['BAN_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'mute' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['MUTE_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'unmute' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['UNMUTE_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'add' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['ADD_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'kickme' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['KICKME_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'afk' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['AFK_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'alive' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['ALIVE_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'demote' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['DEMOTE_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'promote' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['PROMOTE_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'block' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['BLOCK_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if (match[1] == 'unblock' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
-        await heroku.patch(baseURI + '/config-vars', { 
-            body: { 
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
                 ['UNBLOCK_MESSAGE']: message.reply_message.text
-            } 
+            }
         });
     }
     else if ((!match[1] == 'unblock' || !match[1] == 'add' || !match[1] == 'block' || !match[1] == 'mute' || !match[1] == 'unmute' || !match[1] == 'afk' || !match[1] == 'alive' || !match[1] == 'demote' || !match[1] == 'promote' || !match[1] == 'ban' || !match[1] == 'kickme') && message.reply_message) {
@@ -194,20 +187,20 @@ if (Config.WORKTYPE == 'private') {
             await got(url, {headers: headers}).then(async (res) => {
                const resp = JSON.parse(res.body);
                total_quota = Math.floor(resp.account_quota);
-               quota_used = Math.floor(resp.quota_used);         
+               quota_used = Math.floor(resp.quota_used);
                percentage = Math.round((quota_used / total_quota) * 100);
                remaining = total_quota - quota_used;
                await message.client.sendMessage(
                     message.jid,
-                    Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  + 
-                    Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +  
+                    Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  +
+                    Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +
                     Lang.PERCENTAGE + ": ```{}```\n\n".format(percentage) +
                     Lang.DYNO_LEFT + ": ```{}```\n".format(secondsToHms(remaining)),
                     MessageType.text
                );
             }).catch(async (err) => {
-                await message.client.sendMessage(message.jid,err.message, MessageType.text);     
-            });        
+                await message.client.sendMessage(message.jid,err.message, MessageType.text);
+            });
         });
     }));
 }
@@ -227,20 +220,20 @@ else if (Config.WORKTYPE == 'public') {
             await got(url, {headers: headers}).then(async (res) => {
                const resp = JSON.parse(res.body);
                total_quota = Math.floor(resp.account_quota);
-               quota_used = Math.floor(resp.quota_used);         
+               quota_used = Math.floor(resp.quota_used);
                percentage = Math.round((quota_used / total_quota) * 100);
                remaining = total_quota - quota_used;
                await message.client.sendMessage(
                     message.jid,
-                    Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  + 
-                    Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +  
+                    Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  +
+                    Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +
                     Lang.PERCENTAGE + ": ```{}```\n\n".format(percentage) +
                     Lang.DYNO_LEFT + ": ```{}```\n".format(secondsToHms(remaining)),
                     MessageType.text
                );
             }).catch(async (err) => {
-                await message.client.sendMessage(message.jid,err.message, MessageType.text);     
-            });        
+                await message.client.sendMessage(message.jid,err.message, MessageType.text);
+            });
         });
     }));
     Asena.addCommand({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddCommandList: true}, (async (message, match) => {
@@ -257,20 +250,20 @@ else if (Config.WORKTYPE == 'public') {
             await got(url, {headers: headers}).then(async (res) => {
                const resp = JSON.parse(res.body);
                total_quota = Math.floor(resp.account_quota);
-               quota_used = Math.floor(resp.quota_used);         
+               quota_used = Math.floor(resp.quota_used);
                percentage = Math.round((quota_used / total_quota) * 100);
                remaining = total_quota - quota_used;
                await message.client.sendMessage(
                     message.jid,
-                    Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  + 
-                    Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +  
+                    Lang.DYNO_TOTAL + ": ```{}```\n\n".format(secondsToHms(total_quota))  +
+                    Lang.DYNO_USED + ": ```{}```\n".format(secondsToHms(quota_used)) +
                     Lang.PERCENTAGE + ": ```{}```\n\n".format(percentage) +
                     Lang.DYNO_LEFT + ": ```{}```\n".format(secondsToHms(remaining)),
                     MessageType.text
                );
             }).catch(async (err) => {
-                await message.client.sendMessage(message.jid,err.message, MessageType.text);     
-            });        
+                await message.client.sendMessage(message.jid,err.message, MessageType.text);
+            });
         });
     }));
 }

@@ -1,8 +1,3 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
-*/
-
 const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -16,7 +11,7 @@ const got = require("got"); // Responses Catcher
 const deepai = require('deepai'); // Localde ise deepmain.js oluşturarak özelleştirilebilir şekilde kullanabilirsiniz. Web Sunucularında Çalışmaz!!
 deepai.setApiKey('3098e7e8-2590-436e-89b0-939da517c1f1'); // Quickstart API Key
 
-const Language = require('../language'); 
+const Language = require('../language');
 const Lang = Language.getString('deepai'); // Language Support
 
 if (Config.WORKTYPE == 'private') {
@@ -37,20 +32,20 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'animai', fromMe: true, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
 
-        var min = 10000; 
-        var max = 50000;  
+        var min = 10000;
+        var max = 50000;
 
-        var asenasrandomgen = Math.floor(Math.random() * (+max - +min) + +min); 
+        var asenasrandomgen = Math.floor(Math.random() * (+max - +min) + +min);
         var IMGWADATA = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://www.thiswaifudoesnotexist.net/example-' + asenasrandomgen + '.jpg&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
 
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
-            MessageType.image, 
+            MessageType.image,
             {mimetype: Mimetype.jpg, caption: 'Made by WhatsBAT'}
         )
 
     }));
-    Asena.addCommand({pattern: 'colorai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'colorai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -81,8 +76,8 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'waifuai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
-  
+    Asena.addCommand({pattern: 'waifuai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Mixing.. 🧩',MessageType.text);
@@ -112,8 +107,8 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'superai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
-  
+    Asena.addCommand({pattern: 'superai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Enhancing.. 🖌️',MessageType.text);
@@ -156,7 +151,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'dreamai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'dreamai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -187,8 +182,8 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'neuraltalkai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
- 
+    Asena.addCommand({pattern: 'neuraltalkai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Reading.. 🙇🏻',MessageType.text);
@@ -231,8 +226,8 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'toonai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
- 
+    Asena.addCommand({pattern: 'toonai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Tooning.. 🌟',MessageType.text);
@@ -262,8 +257,8 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'nudityai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
-  
+    Asena.addCommand({pattern: 'nudityai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Finding NSFW.. 🔥',MessageType.text);
@@ -304,8 +299,8 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'ganstyle', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
- 
+    Asena.addCommand({pattern: 'ganstyle', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Creating.. ♻️',MessageType.text);
@@ -354,15 +349,15 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'animai', fromMe: false, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
 
-        var min = 10000; 
-        var max = 50000;  
+        var min = 10000;
+        var max = 50000;
 
-        var asenasrandomgen = Math.floor(Math.random() * (+max - +min) + +min); 
+        var asenasrandomgen = Math.floor(Math.random() * (+max - +min) + +min);
         var IMGWADATA = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://www.thiswaifudoesnotexist.net/example-' + asenasrandomgen + '.jpg&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
 
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
-            MessageType.image, 
+            MessageType.image,
             {mimetype: Mimetype.jpg, caption: 'Made by WhatsBAT'}
         )
 
@@ -377,20 +372,20 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'animai', fromMe: true, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
 
-        var min = 10000; 
-        var max = 50000;  
+        var min = 10000;
+        var max = 50000;
 
-        var asenasrandomgen = Math.floor(Math.random() * (+max - +min) + +min); 
+        var asenasrandomgen = Math.floor(Math.random() * (+max - +min) + +min);
         var IMGWADATA = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://www.thiswaifudoesnotexist.net/example-' + asenasrandomgen + '.jpg&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
 
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
-            MessageType.image, 
+            MessageType.image,
             {mimetype: Mimetype.jpg, caption: 'Made by WhatsBAT'}
         )
 
     }));
-    Asena.addCommand({pattern: 'colorai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'colorai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -421,8 +416,8 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'waifuai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
-  
+    Asena.addCommand({pattern: 'waifuai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Mixing.. 🧩',MessageType.text);
@@ -452,7 +447,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'superai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'superai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -496,7 +491,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'dreamai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'dreamai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -527,7 +522,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'neuraltalkai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'neuraltalkai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -571,7 +566,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'toonai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'toonai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -602,7 +597,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'nudityai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'nudityai', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -644,7 +639,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'ganstyle', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'ganstyle', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -682,7 +677,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'colorai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'colorai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -713,8 +708,8 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'waifuai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
-  
+    Asena.addCommand({pattern: 'waifuai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Mixing.. 🧩',MessageType.text);
@@ -744,8 +739,8 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'superai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
-  
+    Asena.addCommand({pattern: 'superai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Enhancing.. 🖌️',MessageType.text);
@@ -788,7 +783,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'dreamai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'dreamai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -819,8 +814,8 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'neuraltalkai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
- 
+    Asena.addCommand({pattern: 'neuraltalkai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Reading.. 🙇🏻',MessageType.text);
@@ -863,8 +858,8 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'toonai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
- 
+    Asena.addCommand({pattern: 'toonai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Tooning.. 🌟',MessageType.text);
@@ -894,8 +889,8 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'nudityai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {  
-  
+    Asena.addCommand({pattern: 'nudityai', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Finding NSFW.. 🔥',MessageType.text);
@@ -936,8 +931,8 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'ganstyle', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {   
- 
+    Asena.addCommand({pattern: 'ganstyle', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
         var downloading = await message.client.sendMessage(message.jid,'Creating.. ♻️',MessageType.text);

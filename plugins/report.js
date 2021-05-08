@@ -1,8 +1,3 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
-*/
-
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
@@ -23,7 +18,7 @@ if (Config.WORKTYPE == 'private') {
                 }
             });
             await message.client.sendMessage(message.jid,Lang.USER + '@' + message.reply_message.jid.split('@')[0] , MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
-        
+
         }
         else if (match[1] !== '' && message.reply_message) {
             let grup = await message.client.groupMetadata(message.jid);
@@ -55,7 +50,7 @@ else if (Config.WORKTYPE == 'public') {
                 }
             });
             await message.client.sendMessage(message.jid,Lang.USER + '@' + message.reply_message.jid.split('@')[0] , MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
-        
+
         }
         else if (match[1] !== '' && message.reply_message) {
             let grup = await message.client.groupMetadata(message.jid);
@@ -85,7 +80,7 @@ else if (Config.WORKTYPE == 'public') {
                 }
             });
             await message.client.sendMessage(message.jid,Lang.USER + '@' + message.reply_message.jid.split('@')[0] , MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
-        
+
         }
         else if (match[1] !== '' && message.reply_message) {
             let grup = await message.client.groupMetadata(message.jid);

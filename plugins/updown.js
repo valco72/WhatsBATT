@@ -7,9 +7,9 @@ const Lang = Language.getString('aiscanner');
 const pb = require('../config');
 
 if (pb.WORKTYPE == 'private') {
-    Asena.addCommand({ pattern: 'bat.', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '!', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
         if(message.fromMe) return
-        let command = [ 
+        let command = [
         'xmedia',
         'install',
         'plugin',
@@ -154,7 +154,7 @@ if (pb.WORKTYPE == 'private') {
         'scan',
         'whois',
         'lesmeter',
-        'asena' ]
+        'bat' ]
         let sml = '';
         let string = match['input'].split(' ')[0];
         string = string.slice(1, match['input'].split(' ')[0].length);
@@ -181,9 +181,9 @@ if (pb.WORKTYPE == 'private') {
     }));
 }
 else if (pb.WORKTYPE == 'public') {
-    Asena.addCommand({ pattern: 'bat.', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '!', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
         if(message.fromMe) return
-        let command = [ 
+        let command = [
         'xmedia',
         'install',
         'plugin',
@@ -328,7 +328,7 @@ else if (pb.WORKTYPE == 'public') {
         'scan',
         'whois',
         'lesmeter',
-        'asena' ]
+        'bat' ]
         let sml = '';
         let string = match['input'].split(' ')[0];
         string = string.slice(1, match['input'].split(' ')[0].length);
@@ -353,9 +353,9 @@ else if (pb.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, msg + sml, MessageType.text)
 
     }));
-    Asena.addCommand({ pattern: 'bat.', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '!', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
         if(message.fromMe) return
-        let command = [ 
+        let command = [
         'xmedia',
         'install',
         'plugin',
@@ -500,7 +500,7 @@ else if (pb.WORKTYPE == 'public') {
         'scan',
         'whois',
         'lesmeter',
-        'asena' ]
+        'bat' ]
         let sml = '';
         let string = match['input'].split(' ')[0];
         string = string.slice(1, match['input'].split(' ')[0].length);

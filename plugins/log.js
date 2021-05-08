@@ -5,10 +5,10 @@ const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 
-const Language = require('../language'); 
-const Lang = Language.getString('log'); 
+const Language = require('../language');
+const Lang = Language.getString('log');
 
-Asena.addCommand({ pattern: 'log', fromMe: true, desc: Lang.LOG, warn: Lang.ANIM, onlyGroup: true}, (async (message, match) => { 
+Asena.addCommand({ pattern: 'log', fromMe: true, desc: Lang.LOG, warn: Lang.ANIM, onlyGroup: true}, (async (message, match) => {
 
     const meta = await message.client.groupMetadata(message.jid)
     const usmeta = message.client.isOnWhatsApp(message.jid)
@@ -32,7 +32,7 @@ Asena.addCommand({ pattern: 'log', fromMe: true, desc: Lang.LOG, warn: Lang.ANIM
                 Lang.SUC,
                 MessageType.text,
             );
-        }  
+        }
         else if (message.reply_message.image) {
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
@@ -96,7 +96,7 @@ Asena.addCommand({ pattern: 'log', fromMe: true, desc: Lang.LOG, warn: Lang.ANIM
                     message.client.user.jid,
                     fs.readFileSync('ad.mp3'),
                     MessageType.audio,
-                    { mimetype: Mimetype.mp4Audio} 
+                    { mimetype: Mimetype.mp4Audio}
                 );
                 await message.client.sendMessage(
                     message.client.user.jid,
