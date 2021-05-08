@@ -2,9 +2,9 @@
     "__ASENAJSON__": true,
     "LANGUAGE": "Português Brasileiro",
     "LANGCODE": "pt",
-    "AUTHOR": "Phaticusthiccy / @xmtscf",
+    "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_bat": {
             "COMMAND": "Comando",
             "DESC": "Descrição",
             "EXAMPLE": "Exemplo",
@@ -75,9 +75,9 @@
             "MUST_TEXT": "```Por favor responda a qualquer mensagem```"
         },
         "heroku": {
-            "RESTART_DESC": "Reinicia o WhatsAsena",
+            "RESTART_DESC": "Reinicia o WhatsBAT",
             "RESTART_MSG": "```Reiniciando...```",
-            "SHUTDOWN_DESC": "Desligar WhatsAsena",
+            "SHUTDOWN_DESC": "Desligar WhatsBAT",
             "SHUTDOWN_MSG": "```Desligando ⛔```",
             "DYNO_DESC": "Verifique o uso do dinamômetro heroku",
             "DYNO_TOTAL": "```Quota Total```",
@@ -96,7 +96,7 @@
             "SUCC_AF": "*Use o script* ```default``` *para restaurá-lo.*",
             "DEGİS_NONE": "```Por favor, digite qualquer nome de módulo!``` \n\n*.degis afk*\n*.degis alive* _({pp}, {info}, {version}, {plugin})_\n*.degis ban*\n*.degis add*\n*.degis mute*\n*.degis unmute*\n*.degis promote*\n*.degis demote*\n*.degis kickme*\n*.degis block*\n*.degis unblock*",
             "WR": "*Use os módulos que se aplicam!*",
-            "DEGİS_DESC": "Substitua o texto dos módulos como alive, afk."          
+            "DEGİS_DESC": "Substitua o texto dos módulos como alive, afk."
         },
         "filters": {
             "FILTER_DESC": "Ele adiciona um filtro. Se alguém escreve seu filtro, ele envia a resposta. Se você apenas escrever .filter, ele mostra sua lista de filtros.",
@@ -249,7 +249,7 @@
             "INVALID_HEROKU": "*❌ Suas informações do Heroku estão erradas!*",
             "UPDATED": "*✅ Atualizado com sucesso!*",
             "UPDATED_LOCAL": "*✅ Atualizado com sucesso!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena reiniciando automaticamente!*",
+            "AFTER_UPDATE": "*💬 WhatsBAT reiniciando automaticamente!*",
             "IN_AF": "*Certifique-se de que* ```HEROKU_APP_NAME``` *é igual a* ```app name```\n*Se esses dois valores forem iguais, altere* ```HEROKU_API_KEY```\n\n_Para acessar essas configurações Heroku >> App >> Settings >> Reavel Config Vars siga seus passos._\n_Para renovar sua chave de API Heroku >> Account >> API Key Depois de atualizar a seção, substitua-a pela chave de API antiga.._"
         },
         "weather": {
@@ -286,7 +286,7 @@
             "XMEDİA_DESC": "É um plugin com mais de 25 ferramentas de mídia.",
             "T_FALSE": "```❌ Efeito de mistura incorreto inserido!```\n```🔎 Comandos Existentes:```\n\n*$dodge* - Aplica um filtro de cor rosa ao vídeo.\n*$multiply* - Aplica um filtro de cor verde ao vídeo.\n*$grainmerge* - Aumenta o contraste do vídeo.\n*$and* - Aplica efeito de raio negro de acordo com a velocidade do vídeo.\n*$or* - Aplica um efeito de raio branco de acordo com a velocidade do vídeo.\n*$burn* - Aplica contraste verde ao vídeo.\n*$difference* - Mostra as diferenças aplicando relevo verde ao vídeo.\n*$grainextract* - Mostra as diferenças aplicando relevo cinza ao vídeo.\n*$divide* - Demonstra as diferenças aplicando um relevo rosa ao vídeo.\n*$xor* - Aplica relevo verde e efeito relâmpago ao vídeo.\n*$hardmix* - Mistura as cores do vídeo em tons de amarelo e vermelho.\n*$negation* - Transforma a dinâmica do vídeo em rosa.",
             "T_NOT": "```💭 Você precisa inserir quaisquer efeitos de mistura!\n```🔎 Comandos Existentes:```\n\n*$dodge* - Aplica um filtro de cor rosa ao vídeo.\n*$multiply* - Aplica um filtro de cor verde ao vídeo.\n*$grainmerge* - Aumenta o contraste do vídeo.\n*$and* - Aplica efeito de raio negro de acordo com a velocidade do vídeo.\n*$or* - Aplica um efeito de raio branco de acordo com a velocidade do vídeo.\n*$burn* - Applies green contrast to video.\n*$difference* - Mostra as diferenças aplicando relevo verde ao vídeo.\n*$grainextract* - Mostra as diferenças aplicando relevo cinza ao vídeo.\n*$divide* - Demonstra as diferenças aplicando um relevo rosa ao vídeo.\n*$xor* - Aplica relevo verde e efeito relâmpago ao vídeo.\n*$hardmix* - Mistura as cores do vídeo em tons de amarelo e vermelho.\n*$negation* - Transforma a dinâmica do vídeo em rosa.",
-            "T_DESC": "Aplica o efeito TBlend selecionado a vídeos." 
+            "T_DESC": "Aplica o efeito TBlend selecionado a vídeos."
         },
         "mute": {
             "BİRMUTE": "*O grupo foi silenciado por 1 minuto!*",
@@ -435,7 +435,7 @@
             "SAVE_USAGE": "Responda uma mensagem e digite .save ou apenas use .save <Sua nota> sem responder",
             "REPLY": "Forneça uma nota ou responda a uma mensagem.",
             "SUCCESSFULLY_ADDED": "Nova nota adicionada com sucesso, verifique suas notas com .notes.",
-            "UNSUCCESSFUL": "Não foi possível adicionar nota, tente novamente mais tarde ou entre em contato com os desenvolvedores do WhatsAsena.",
+            "UNSUCCESSFUL": "Não foi possível adicionar nota, tente novamente mais tarde ou entre em contato com os desenvolvedores do WhatsBAT.",
             "DELETE_USAGE": "Exclui *todas* as suas notas salvas.",
             "SUCCESSFULLY_DELETED": "Excluiu com sucesso todas as suas notas."
         },

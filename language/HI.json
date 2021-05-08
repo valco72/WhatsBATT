@@ -2,9 +2,9 @@
     "__ASENAJSON__": true,
     "LANGUAGE": "Hindi",
     "LANGCODE": "hi",
-    "AUTHOR": "Avi Patil / Phaticusthiccy",
+    "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_bat": {
             "COMMAND": "आदेश",
             "DESC": "वर्णन",
             "EXAMPLE": "उदाहरण",
@@ -75,9 +75,9 @@
             "MUST_TEXT": "```कृपया किसी भी संदेश का जवाब दें```"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena को फिर से शुरू करें",
+            "RESTART_DESC": "WhatsBAT को फिर से शुरू करें",
             "RESTART_MSG": "```पुनरारंभ करते हुए प्रतीक्षा करें...```",
-            "SHUTDOWN_DESC": "WhatsAsena को बंद करो",
+            "SHUTDOWN_DESC": "WhatsBAT को बंद करो",
             "SHUTDOWN_MSG": "```बंद कर रहा है ⛔```",
             "DYNO_DESC": "heroku dyno उपयोग की जाँच करें",
             "DYNO_TOTAL": "```कुल कोटा```",
@@ -96,7 +96,7 @@
             "SUCC_AF": "*इसे पुनर्स्थापित करने के लिए* ```default``` *का उपयोग करें*",
             "DEGİS_NONE": "```कृपया कोई भी मॉड्यूल नाम दर्ज करें!``` \n\n*.degis afk*\n*.degis alive* _({pp}, {info}, {version}, {plugin})_\n*.degis ban*\n*.degis add*\n*.degis mute*\n*.degis unmute*\n*.degis promote*\n*.degis demote*\n*.degis kickme*\n*.degis block*\n*.degis unblock*",
             "WR": "*कृपया लागू होने वाले मॉड्यूल का उपयोग करें!*",
-            "DEGİS_DESC": "Alive, afk जैसे मॉड्यूल के टेक्स्ट को बदलें."           
+            "DEGİS_DESC": "Alive, afk जैसे मॉड्यूल के टेक्स्ट को बदलें."
         },
         "filters": {
             "FILTER_DESC": "यह एक फिल्टर जोड़ता है. अगर कोई आपका फ़िल्टर लिखता है, यह जवाब भेजता है. अगर तुम सिर्फ लिखो. filter, यह आपकी फ़िल्टर सूची दिखाता है।",
@@ -286,7 +286,7 @@
             "XMEDİA_DESC": "यह 25 से अधिक मीडिया टूल के साथ एक प्लगइन है",
             "T_FALSE": "```❌ Incorrect Blend Effect Entered!```\n```🔎 Existing Commands:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
             "T_NOT": "```💭 You Need To Enter Any Blend Effects!\n```🔎 Existing Commands:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
-            "T_DESC": "Applies the selected TBlend effect to videos." 
+            "T_DESC": "Applies the selected TBlend effect to videos."
         },
         "unvoice": {
             "UV_DESC": "ऑडियो को ध्वनि रिकॉर्डिंग में परिवर्तित करता है",
@@ -369,7 +369,7 @@
             "SAATONMUTE": "*समूह को 10 घंटे के लिए चुप करा दिया गया था!*",
             "SAATONBİRMUTE": "*समूह को 11 घंटे के लिए चुप करा दिया गया था!*",
             "SAATONİKİMUTE": "*समूह को 12 घंटे के लिए चुप करा दिया गया था!*",
-            "GÜNBİRMUTE": "*समूह को 1 दिन के लिए चुप करा दिया गया था!*", 
+            "GÜNBİRMUTE": "*समूह को 1 दिन के लिए चुप करा दिया गया था!*",
             "GÜNİKİMUTE": "*समूह को 2 दिन के लिए चुप करा दिया गया था!*",
             "GÜNÜÇMUTE": "*समूह को 3 दिन के लिए चुप करा दिया गया था!*",
             "TÜR": "*अज्ञात प्रकार!*\n_मिनट: 1-59m_\n_इस घंटे: 1-12h_\n_दिन: 1d-3d_",

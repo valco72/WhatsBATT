@@ -2,9 +2,9 @@
     "__ASENAJSON__": true,
     "LANGUAGE": "Mlayalam",
     "LANGCODE": "ml",
-    "AUTHOR": "Phaticusthiccy / Justin",
+    "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_bat": {
             "COMMAND": "കമാൻഡ്",
             "DESC": "വിവരണം",
             "EXAMPLE": "ഉദാഹരണം",
@@ -75,9 +75,9 @@
             "MUST_TEXT": "മറുപടി അയക്കുന്നത് ഒരു വാക്കിനയിരിക്കണം, മറ്റൊന്നും സ്വീകരിക്കുന്നതല്ല"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena യെ റീസ്റ്റാർട്ട് ചെയ്യുക",
+            "RESTART_DESC": "WhatsBAT യെ റീസ്റ്റാർട്ട് ചെയ്യുക",
             "RESTART_MSG": "```റീസ്റ്റാർട്ട് ചെയ്യുന്നു..```",
-            "SHUTDOWN_DESC": "WhatsAsena യെ ഓഫ് ചെയ്യുക",
+            "SHUTDOWN_DESC": "WhatsBAT യെ ഓഫ് ചെയ്യുക",
             "SHUTDOWN_MSG": "```ഓഫ് ചെയ്യുന്നു ⛔```",
             "DYNO_DESC": "heroku dyno ഉപയോഗം അറിയാൻ",
             "DYNO_TOTAL": "```മൊത്തം ക്വാട്ട```",
@@ -96,7 +96,7 @@
             "SUCC_AF": "*ഇത് പുന restore സ്ഥാപിക്കാൻ* ```default``` *എന്ന വാചകം ഉപയോഗിക്കുക.*",
             "DEGİS_NONE": "```ഏതെങ്കിലും മൊഡ്യൂൾ നാമം നൽകുക!``` \n\n*.degis afk*\n*.degis alive* _({pp}, {info}, {version}, {plugin})_\n*.degis ban*\n*.degis add*\n*.degis mute*\n*.degis unmute*\n*.degis promote*\n*.degis demote*\n*.degis kickme*\n*.degis block*\n*.degis unblock*",
             "WR": "*ബാധകമായ മൊഡ്യൂളുകൾ ദയവായി ഉപയോഗിക്കുക!*",
-            "DEGİS_DESC": "Alive, afk പോലുള്ള മൊഡ്യൂളുകളുടെ വാചകം മാറ്റിസ്ഥാപിക്കുക."          
+            "DEGİS_DESC": "Alive, afk പോലുള്ള മൊഡ്യൂളുകളുടെ വാചകം മാറ്റിസ്ഥാപിക്കുക."
         },
         "filters": {
             "FILTER_DESC": "ഇത് ഒരു ഫിൽട്ടർ ചേർക്കുന്നു. ആരെങ്കിലും നിങ്ങളുടെ ഫിൽ‌റ്റർ‌ എഴുതുകയാണെങ്കിൽ‌, അത് ഉത്തരം അയയ്‌ക്കുന്നു. നിങ്ങൾ .filter എന്ന് എഴുതുകയാണെങ്കിൽ, അത് നിങ്ങളുടെ ഫിൽട്ടർ ലിസ്റ്റാണെന്ന് കാണിക്കുന്നു.",
@@ -249,7 +249,7 @@
             "INVALID_HEROKU": "*❌ സെർവർ ഡേറ്റാ തന്നിരിക്കുന്നത് തെറ്റാണ്!*",
             "UPDATED": "✅ വിജയകരമായ അപ്ഡേറ്റ് ചെയ്തു!*",
             "UPDATED_LOCAL": "*✅ വിജയകരമായ അപ്ഡേറ്റ് ചെയ്തു! *\n_റീസ്റ്റാർട്ട് ചെയ്താൽ മാറ്റങ്ങൾ  ഉപയോഗിക്കാം._",
-            "AFTER_UPDATE": "*💬 WhatsAsena പുനരാരംഭിക്കുന്നു!*",
+            "AFTER_UPDATE": "*💬 WhatsBAT പുനരാരംഭിക്കുന്നു!*",
             "IN_AF": "```HEROKU_APP_NAME, app name``` *എന്നതിന് തുല്യമാണെന്ന് ദയവായി ഉറപ്പുവരുത്തുക.*\n*ഈ രണ്ട് മൂല്യങ്ങളും തുല്യമാണെങ്കിൽ, ദയവായി HEROKU_API_KEY മാറ്റുക!*\n\n_ഈ ക്രമീകരണങ്ങൾ ആക്സസ് ചെയ്യുന്നതിന് Heroku >> App >> Settings >> Reavel Config Vars നിങ്ങളുടെ ഘട്ടങ്ങൾ പാലിക്കുക._\n_നിങ്ങളുടെ API കീ പുതുക്കുന്നതിന് Heroku >> Account >> API Key വിഭാഗത്തിൽ നിന്ന് പുതുക്കിയ ശേഷം, പഴയ API കീ ഉപയോഗിച്ച് അത് മാറ്റിസ്ഥാപിക്കുക._"
         },
         "weather": {
@@ -286,7 +286,7 @@
             "XMEDİA_DESC": "25 ലധികം മീഡിയ ഉപകരണങ്ങളുള്ള ഒരു പ്ലഗിൻ ആണിത്.",
             "T_FALSE": "```❌ തെറ്റായ TBlend പ്രഭാവം നൽകി!```\n```🔎 നിലവിലുള്ള കമാൻഡുകൾ:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
             "T_NOT": "```💭 നിങ്ങൾക്ക് ഏതെങ്കിലും TBlend ഇഫക്റ്റുകൾ നൽകേണ്ടതുണ്ട്!```\n```🔎 നിലവിലുള്ള കമാൻഡുകൾ:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
-            "T_DESC": "തിരഞ്ഞെടുത്ത ടിബ്ലെൻഡ് ഇഫക്റ്റ് വീഡിയോകളിൽ പ്രയോഗിക്കുന്നു." 
+            "T_DESC": "തിരഞ്ഞെടുത്ത ടിബ്ലെൻഡ് ഇഫക്റ്റ് വീഡിയോകളിൽ പ്രയോഗിക്കുന്നു."
         },
         "unvoice": {
             "UV_DESC": "ഓഡിയോയെ ശബ്‌ദ റെക്കോർഡിംഗിലേക്ക് പരിവർത്തനം ചെയ്യുന്നു.",

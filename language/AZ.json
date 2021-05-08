@@ -4,7 +4,7 @@
     "LANGCODE": "Tr",
     "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_bat": {
             "COMMAND": "Əmr",
             "DESC": "Açığlama",
             "EXAMPLE": "Nümunə",
@@ -75,9 +75,9 @@
             "MUST_TEXT": "```Cavab mətn olmalıdır```"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena-nı yenidən başladın",
+            "RESTART_DESC": "WhatsBAT-nı yenidən başladın",
             "RESTART_MSG": "```yenidən başladır ...```",
-            "SHUTDOWN_DESC": "WhatsAsena-nı söndürün",
+            "SHUTDOWN_DESC": "WhatsBAT-nı söndürün",
             "SHUTDOWN_MSG": "```söndürmək ⛔```",
             "DYNO_DESC": "Heroku dyno istifadəsini yoxlayın",
             "DYNO_TOTAL": "```Ümumi kvota```",
@@ -96,7 +96,7 @@
             "SUCC_AF": "*Bərpa etmək üçün* ```default``` *mətn istifadə edin.*",
             "DEGİS_NONE": "```Zəhmət olmasa istənilən modul adını daxil edin!``` \n\n*.degis afk*\n*.degis alive* _({pp}, {info}, {version}, {plugin})_\n*.degis ban*\n*.degis add*\n*.degis mute*\n*.degis unmute*\n*.degis promote*\n*.degis demote*\n*.degis kickme*\n*.degis block*\n*.degis unblock*",
             "WR": "*Zəhmət olmasa tətbiq olunan modullardan istifadə edin!*",
-            "DEGİS_DESC": "Modulların mətnini alive, afk kimi dəyişdirin."        
+            "DEGİS_DESC": "Modulların mətnini alive, afk kimi dəyişdirin."
         },
         "filters": {
             "FILTER_DESC": "Filter əlavə edər. Yazdığın filter'i biri yazsa, yazdığınız cavabı göndərər. Əgər sadəcə filter yazsanız, yazılan filter'ləri göstərər.",
@@ -123,7 +123,7 @@
             "GOODBYE_DELETED": "*✅ Sağollaşma mesajı müvəffəqiyyətlə silindi!*",
             "GOODBYE_SETTED": "*✅ Sağollaşma mesajı müvəffəqiyyətlə düzəldildi!*"
         },
-        
+
         "profile": {
             "KICKME_DESC": "Yazdığınız grupdan sizi çıxardar.",
             "KICKME": "```Görüşənədək! Mən gedirəm 🤠```",
@@ -247,7 +247,7 @@
             "INVALID_HEROKU": "*❌ Heroku məlumatlarınız yanlışdır!*",
             "UPDATED": "*✅ Yenilənmə müvəffəqiyyətlə sona çatdı!*",
             "UPDATED_LOCAL": "*✅ Yenilənmə müvəffəqiyyətlə sona çatdı!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Yenidən Başladır.*",
+            "AFTER_UPDATE": "*💬 WhatsBAT Yenidən Başladır.*",
             "IN_AF": "*Zəhmət olmasa* ```HEROKU_APP_NAME``` *ilə* ```app_name``` *eyni olduğuna əmin olun.*\n*Bu iki dəyər eynidirsə, xahiş edirəm* ```HEROKU_API_KEY```'inizi *dəyişdirin!*\n\n_Bu parametrlərə daxil olmaq üçün Heroku >> Uygulama >> Settings >> Reavel Config Vars addımlarınızı izləyin._\n_API açarınızı yeniləmək üçün Heroku >> Account >> API Key Bölmədən təzələndikdən sonra onu köhnə API açarı ilə əvəz edin._"
         },
         "weather": {
@@ -284,7 +284,7 @@
             "XMEDİA_DESC": "25-dən çox medya vasitəsi olan plagindir.",
             "T_FALSE": "```❌ Yanlış Blend Effekti Daxil Edildi!```\n```🔎 Mövcud əmrlər:```\n\n*$dodge* - Videoya çəhrayı rəngli bir filtr tətbiq edir.\n*$multiply* - Videoya yaşıl rəngli bir filtr tətbiq edir.\n*$grainmerge* - Videonun kontrastını artırır.\n*$and* - Videonun sürətinə görə qara ildırım effekti tətbiq edir.\n*$or* - Videonun sürətinə görə ağ ildırım effekti tətbiq edir.\n*$burn* - Videoya yaşıl kontrast tətbiq edir.\n*$difference* - Videoya yaşıl relyef tətbiq edərək fərqləri göstərir.\n*$grainextract* - Videoya boz relyef tətbiq edərək fərqləri göstərir.\n*$divide* - Videoya çəhrayı bir rahatlama tətbiq edərək fərqləri nümayiş etdirir.\n*$xor* - Həm yaşıl relyef, həm də ildırım effekti videoya tətbiq olunur.\n*$hardmix* - Videonun rənglərini sarı və qırmızı bir tonda qarışdırır.\n*$negation* - Videonun dinamikasını çəhrayı rəngə çevirir.",
             "T_NOT": "```💭 Hər hansı bir Blend effekti daxil etməlisiniz!\n```🔎 Mövcud əmrlər:```\n\n*$dodge* - Videoya çəhrayı rəngli bir filtr tətbiq edir.\n*$multiply* - Videoya yaşıl rəngli bir filtr tətbiq edir.\n*$grainmerge* - Videonun kontrastını artırır.\n*$and* - Videonun sürətinə görə qara ildırım effekti tətbiq edir.\n*$or* - Videonun sürətinə görə ağ ildırım effekti tətbiq edir.\n*$burn* - Videoya yaşıl kontrast tətbiq edir.\n*$difference* - Videoya yaşıl relyef tətbiq edərək fərqləri göstərir.\n*$grainextract* - Videoya boz relyef tətbiq edərək fərqləri göstərir.\n*$divide* - Videoya çəhrayı bir rahatlama tətbiq edərək fərqləri nümayiş etdirir.\n*$xor* - Həm yaşıl relyef, həm də ildırım effekti videoya tətbiq olunur.\n*$hardmix* - Videonun rənglərini sarı və qırmızı bir tonda qarışdırır.\n*$negation* - Videonun dinamikasını çəhrayı rəngə çevirir.",
-            "T_DESC": "Seçilmiş TBlend effektini videolara tətbiq edir." 
+            "T_DESC": "Seçilmiş TBlend effektini videolara tətbiq edir."
         },
         "mute": {
             "BİRMUTE": "*Grup 1 dakika süreyle susturuldu!*",
@@ -433,7 +433,7 @@
             "SAVE_USAGE": "Cavabladığınız mesajı və ya rəsmi qeydləri qeyd edir.",
             "REPLY": "Xahiş edirəm bir mesaj verin və ya onu .save <öz qeydiniz> olaraq istifadə edin.",
             "SUCCESSFULLY_ADDED": "Qeydiniz uğurla qeyd edildi, qeydlərinizə .notes yazaraq daxil ola bilərsiniz.",
-            "UNSUCCESSFUL": "Qeydinizi saxlayarkən bir səhvlə qarşılaşdıq, xahiş edirəm yenidən cəhd edin. Problem davam edərsə, xahiş edirəm WhatsAsena inkişaf etdiriciləri ilə əlaqə saxlayın..",
+            "UNSUCCESSFUL": "Qeydinizi saxlayarkən bir səhvlə qarşılaşdıq, xahiş edirəm yenidən cəhd edin. Problem davam edərsə, xahiş edirəm WhatsBAT inkişaf etdiriciləri ilə əlaqə saxlayın..",
             "DELETE_USAGE": "Yadda saxladığınız *bütün* qeydləri silir.",
             "SUCCESSFULLY_DELETED": "Bütün qeydləriniz uğurla silindi."
         },

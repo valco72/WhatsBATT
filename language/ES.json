@@ -4,7 +4,7 @@
     "LANGCODE": "es",
     "AUTHOR": "Phaticusthiccy / Skueletor",
     "STRINGS": {
-        "_asena": {
+        "_bat": {
             "COMMAND": "Comando",
             "DESC": "Explicación",
             "EXAMPLE": "Ejemplo",
@@ -75,9 +75,9 @@
             "MUST_TEXT": "```Responde cualquier mensaje```"
         },
         "heroku": {
-            "RESTART_DESC": "Reiniciar WhatsAsena",
+            "RESTART_DESC": "Reiniciar WhatsBAT",
             "RESTART_MSG": "```Reiniciando...```",
-            "SHUTDOWN_DESC": "Apagar WhatsAsena",
+            "SHUTDOWN_DESC": "Apagar WhatsBAT",
             "SHUTDOWN_MSG": "```Apagando ⛔```",
             "DYNO_DESC": "Verificar el uso de heroku dyno",
             "DYNO_TOTAL": "```Cuota total```",
@@ -96,7 +96,7 @@
             "SUCC_AF": "*Usa texto* ```default``` *para restaurarlo.*",
             "DEGİS_NONE": "```Ingrese cualquier nombre de módulo!``` \n\n*.degis afk*\n*.degis alive* _({pp}, {info}, {version}, {plugin})_\n*.degis ban*\n*.degis add*\n*.degis mute*\n*.degis unmute*\n*.degis promote*\n*.degis demote*\n*.degis kickme*\n*.degis block*\n*.degis unblock*",
             "WR": "*Utilice los módulos que correspondan!*",
-            "DEGİS_DESC": "Reemplazar el texto de módulos como alive, afk."        
+            "DEGİS_DESC": "Reemplazar el texto de módulos como alive, afk."
         },
         "filters": {
             "FILTER_DESC": "Agrega un filtro. Si alguien escribe el filtro que escribiste, envía la respuesta que escribiste. Si solo escribe filtro, devuelve los filtros que agregó.",
@@ -249,7 +249,7 @@
             "INVALID_HEROKU": "*❌ ¡Tu información de Heroku es incorrecta!*",
             "UPDATED": "*✅ ¡La actualización fue exitosa!*",
             "UPDATED_LOCAL": "*✅ ¡La actualización fue exitosa!*",
-            "AFTER_UPDATE": "*¡Reinicio de WhatsAsena*",
+            "AFTER_UPDATE": "*¡Reinicio de WhatsBAT*",
             "IN_AF": "*Asegúrate de que* ```HEROKU_APP_NAME``` *sea el mismo que* ```app name```\n*Si estos dos valores son iguales, cambie* ```HEROKU_API_KEY```!*\n\n_Siga estos pasos para acceder a estas configuraciones: Heroku >> App >> Settings >> Reavel Configs_\n_Siga estos pasos para renovar su API key:  Heroku >> Account >> API Key Luego reemplácelo con el viejo API key._"
         },
         "weather": {
@@ -286,7 +286,7 @@
             "XMEDİA_DESC": "Es un complemento con más de 25 herramientas multimedia.",
             "T_FALSE": "```❌ ¡Se ha introducido un efecto de Blend incorrecto!```\n```🔎 Comandos existentes:```\n\n*$dodge* - Aplica un filtro de color rosa al video.\n*$multiply* - Aplica un filtro de color verde al video.\n*$grainmerge* - Aumenta el contraste del video.\n*$and* - Aplica efecto de rayo negro según la velocidad del video.\n*$or* - Aplica un efecto de rayo blanco según la velocidad del video.\n*$burn* - Aplica contraste verde al video.\n*$difference* - Muestra las diferencias aplicando relieve verde al video.\n*$grainextract* - Muestra las diferencias aplicando un relieve gris al video.\n*$divide* - Demuestra las diferencias aplicando un relieve rosa al video.\n*$xor* - Aplica tanto relieve verde como efecto relámpago al vídeo.\n*$hardmix* - Mezcla los colores del video en un tono amarillo y rojo.\n*$negation* - Convierte la dinámica del video en rosa.",
             "T_NOT": "```💭 ¡Necesita ingresar cualquier efecto de Blend!\n```🔎 Comandos existentes:```\n\n*$dodge* - Aplica un filtro de color rosa al video.\n*$multiply* - Aplica un filtro de color verde al video.\n*$grainmerge* - Aumenta los valores de contraste del video.\n*$and* - Aplica efecto de rayo negro según la velocidad del video.\n*$or* - Aplica un efecto de rayo blanco según la velocidad del video.\n*$burn* - Aplica contraste verde al video.\n*$difference* - Muestra las diferencias aplicando relieve verde al video.\n*$grainextract* - Muestra las diferencias aplicando un relieve gris al video.\n*$divide* - Demuestra las diferencias aplicando un relieve rosa al video.\n*$xor* - Aplica tanto relieve verde como efecto relámpago al vídeo.\n*$hardmix* - Mezcla los colores del video en un tono amarillo y rojo.\n*$negation* - Convierte la dinámica del video en rosa.",
-            "T_DESC": "Aplica el efecto TBlend seleccionado a los videos." 
+            "T_DESC": "Aplica el efecto TBlend seleccionado a los videos."
         },
         "unvoice": {
             "UV_DESC": "Convierte audio en grabación de sonido.",
@@ -296,35 +296,35 @@
         "ffmpeg": {
             "FF_DESC": "Aplica el filtro ffmpeg deseado al video.\n⌨️ Ejemplo: .ffmpeg fade=in:0:30",
             "FF_PROC": "Aplicar efecto.."
-        }, 
-        "mute": { 
-            "BİRMUTE": "*¡Grupo silenciado durante 1 minuto! *", 
-            "İKİMUTE": "*¡El grupo fue silenciado durante 2 minutos!*", 
-            "ÜÇMUTE": "*¡El grupo fue silenciado durante 3 minutos! *", 
+        },
+        "mute": {
+            "BİRMUTE": "*¡Grupo silenciado durante 1 minuto! *",
+            "İKİMUTE": "*¡El grupo fue silenciado durante 2 minutos!*",
+            "ÜÇMUTE": "*¡El grupo fue silenciado durante 3 minutos! *",
             "DÖRTMUTE": "*¡El grupo fue silenciado durante 4 minutos! *",
             "BEŞMUTE": "*¡El grupo fue silenciado durante 5 minutos! *",
-            "ALTIMUTE": "*¡El grupo fue silenciado durante 6 minutos! *", 
-            "YEDİMUTE": "*¡El grupo fue silenciado durante 7 minutos! *", 
+            "ALTIMUTE": "*¡El grupo fue silenciado durante 6 minutos! *",
+            "YEDİMUTE": "*¡El grupo fue silenciado durante 7 minutos! *",
             "SEKİZMUTE": "*¡El grupo fue silenciado durante 8 minutos! *",
-            "DOKUZMUTE": "*¡El grupo fue silenciado durante 9 minutos! *", 
-            "ONMUTE": "*¡El grupo fue silenciado durante 10 minutos! *", 
-            "ONBİRMUTE": "*¡El grupo fue silenciado durante 11 minutos! *", 
-            "ONİKİMUTE": "*¡El grupo fue silenciado durante 12 minutos! *", 
-            "ONÜÇMUTE": "*¡El grupo fue silenciado durante 13 minutos! *", 
-            "ONDÖRTMUTE": "*¡El grupo fue silenciado durante 14 minutos! *", 
+            "DOKUZMUTE": "*¡El grupo fue silenciado durante 9 minutos! *",
+            "ONMUTE": "*¡El grupo fue silenciado durante 10 minutos! *",
+            "ONBİRMUTE": "*¡El grupo fue silenciado durante 11 minutos! *",
+            "ONİKİMUTE": "*¡El grupo fue silenciado durante 12 minutos! *",
+            "ONÜÇMUTE": "*¡El grupo fue silenciado durante 13 minutos! *",
+            "ONDÖRTMUTE": "*¡El grupo fue silenciado durante 14 minutos! *",
             "ONBEŞMUTE": "*¡El grupo fue silenciado durante 15 minutos! *",
             "ONALTIMUTE": "*¡El grupo fue silenciado durante 16 minutos! *",
-            "ONYEDİMUTE": "*¡El grupo fue silenciado durante 17 minutos! *", 
-            "ONSEKİZMUTE": "*¡El grupo fue silenciado durante 18 minutos! *", 
-            "ONDOKUZMUTE": "*¡El grupo fue silenciado durante 19 minutos! *", 
+            "ONYEDİMUTE": "*¡El grupo fue silenciado durante 17 minutos! *",
+            "ONSEKİZMUTE": "*¡El grupo fue silenciado durante 18 minutos! *",
+            "ONDOKUZMUTE": "*¡El grupo fue silenciado durante 19 minutos! *",
             "YİRMİMUTE": "*¡El grupo fue silenciado durante 20 minutos! *",
             "YİRMİBİRMUTE": "*¡El grupo fue silenciado durante 21 minutos! *",
             "YİRMİİKİMUTE": "*¡El grupo fue silenciado durante 22 minutos! *",
-            "YİRMİÜÇMUTE": "*¡El grupo fue silenciado durante 23 minutos! *", 
-            "YİRMİDÖRTMUTE": "*¡El grupo fue silenciado durante 24 minutos! *", 
-            "YİRMİBEŞMUTE": "*¡El grupo fue silenciado durante 25 minutos! *", 
-            "YİRMİALTIMUTE": "*¡El grupo fue silenciado durante 26 minutos! *", 
-            "YİRMİYEDİMUTE": "*¡El grupo fue silenciado durante 27 minutos! *", 
+            "YİRMİÜÇMUTE": "*¡El grupo fue silenciado durante 23 minutos! *",
+            "YİRMİDÖRTMUTE": "*¡El grupo fue silenciado durante 24 minutos! *",
+            "YİRMİBEŞMUTE": "*¡El grupo fue silenciado durante 25 minutos! *",
+            "YİRMİALTIMUTE": "*¡El grupo fue silenciado durante 26 minutos! *",
+            "YİRMİYEDİMUTE": "*¡El grupo fue silenciado durante 27 minutos! *",
             "YİRMİSEKİZMUTE": "*¡El grupo fue silenciado durante 28 minutos! *",
             "YİRMİDOKUZMUTE": "*¡El grupo fue silenciado durante 29 minutos! *",
             "OTUZMUTE": "*¡El grupo fue silenciado durante 30 minutos! *",
@@ -435,7 +435,7 @@
             "SAVE_USAGE": "Registra el mensaje al que responde o la nota oficial.",
             "REPLY": "Por favor cite un mensaje o usar como .save <yournote>",
             "SUCCESSFULLY_ADDED": "Tu nota ha sido guardada con éxito, puede acceder a sus notas escribiendo .notes",
-            "UNSUCCESSFUL": "Encontramos un error al guardar tu nota, ınténtalo de nuevo. Si el problema persiste, comuníquese con los desarrolladores de WhatsAsena.",
+            "UNSUCCESSFUL": "Encontramos un error al guardar tu nota, ınténtalo de nuevo. Si el problema persiste, comuníquese con los desarrolladores de WhatsBAT.",
             "DELETE_USAGE": "Elimina *todas* las notas que ha guardado.",
             "SUCCESSFULLY_DELETED": "Todas tus notas se han eliminado correctamente."
         },
