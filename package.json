@@ -1,29 +1,29 @@
 {
-  "name": "WhatsAsenaDuplicated",
-  "version": "1.2.3",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./WhatsAsenaDuplicated/bot.js",
+  "name": "WhatsBAT",
+  "version": "1.0",
+  "description": "WhatsBAT - a Whatsapp userbot, which makes whatsapp funny.",
+  "main": "./WhatsBAT/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git"
+    "url": "git+https://github.com/valco72/WhatsBAT.git"
   },
   "keywords": [
     "whatsapp",
     "bot",
     "ai",
-    "asena",
-    "WhatsAsena"
+    "bat",
+    "WhatsBAT"
   ],
-  "author": "AsenaDev / Yusuf Usta",
-  "developer": "AsenaDev / @phaticusthiccy",
+  "author": "AsenaDev / valco72",
+  "developer": "AsenaDev / Mockir",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
+    "url": "https://github.com/valco72/WhatsBAT/issues"
   },
-  "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
+  "homepage": "https://github.com/valco72/WhatsBAT#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.0",
     "@lh2020/speedtest-net": "^2.1.1",

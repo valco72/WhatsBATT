@@ -1,6 +1,4 @@
-/* WhatsAsena Duplicated - Artificial Intelligence Similarity
-Codded by lyfee
-
+/* WhatsBAT
 function similarity(first, second) {
 	first = first.replace(/\s+/g, '')
 	second = second.replace(/\s+/g, '')

@@ -1,15 +1,15 @@
 {
   "name": "WhatsBAT",
   "description": "WhatsBAT project",
-  "logo": "https://i.hizliresim.com/5a79ns.png",
+  "logo": "https://i.hizliresim.com/e1ufxb9.jpg",
   "keywords": [ "whatsapp", "userbot", "BAT", "WhatsBAT", "bot", "api", "ai" ],
   "repository": "https://github.com/valco72/WhatsBAT",
   "website": "https://t.me/WhatsBAT",
   "success_url": "https://t.me/WhatsBAT",
   "stack": "container",
   "env": {
-    "ASENA_SESSION": {
-      "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Asena Session.",
+    "BAT_SESSION": {
+      "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours BAT Session.",
       "required": true
     },
     "SUDO": {
@@ -24,7 +24,7 @@
     "HANDLERS": {
       "description": "Komutlar için. For commands.",
       "required": true,
-      "value": "^[.!;]"
+      "value": "^[!]"
     },
     "SEND_READ": {
       "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
@@ -66,7 +66,7 @@
       "value": "default"
     },
     "WORK_TYPE": {
-      "description": "WhatsAsena Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+      "description": "WhatsBAT Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
       "required": true,
       "value": "private"
     },
@@ -121,7 +121,7 @@
     "GAN_IMAGE": {
       "description": "Gan Style eklentisi için resim bağlantısı yazın. Type image link for Gan Style plugin.",
       "required": true,
-      "value": "https://i.hizliresim.com/5a79ns.png"
+      "value": "https://i.hizliresim.com/e1ufxb9.jpg"
     },
     "NO_ONLINE": {
       "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
