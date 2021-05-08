@@ -99,8 +99,3 @@ This is an open source project, you are responsible for everything you do.
 Absolutely, BAT executives do not accept responsibility.
 By establishing the BAT, you are deemed to have accepted these responsibilities.
 ```
-
-## Developers
-
-[![valco72](https://github.com/valco72.png?size=100)
-[![Mockir](https://github.com/Mockir.png?size=100)
