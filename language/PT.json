@@ -1,8 +1,8 @@
 {
-    "__ASENAJSON__": true,
+    "__BATJSON__": true,
     "LANGUAGE": "Português Brasileiro",
     "LANGCODE": "pt",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "BATDev",
     "STRINGS": {
         "_bat": {
             "COMMAND": "Comando",

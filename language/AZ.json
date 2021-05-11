@@ -1,8 +1,8 @@
 {
-    "__ASENAJSON__": true,
+    "__BATJSON__": true,
     "LANGUAGE": "Türkcə",
     "LANGCODE": "Tr",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "BATDev",
     "STRINGS": {
         "_bat": {
             "COMMAND": "Əmr",

@@ -1,8 +1,8 @@
 {
-    "__ASENAJSON__": true,
+    "__BATJSON__": true,
     "LANGUAGE": "Mlayalam",
     "LANGCODE": "ml",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "BATDev",
     "STRINGS": {
         "_bat": {
             "COMMAND": "കമാൻഡ്",

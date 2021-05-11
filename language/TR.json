@@ -1,8 +1,8 @@
 {
-    "__ASENAJSON__": true,
+    "__BATJSON__": true,
     "LANGUAGE": "Türkçe",
     "LANGCODE": "tr",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "BATDev",
     "STRINGS": {
         "_bat": {
             "COMMAND": "Komut",
