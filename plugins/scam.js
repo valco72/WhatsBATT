@@ -1,10 +1,10 @@
-const Asena = require('../events');
+const BAT = require('../events');
 const {MessageType, MessageOptions, Mimetype, Presence} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
 const Lang = Language.getString('scam');
 
-Asena.addCommand({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC}, (async (message, match) => {
+BAT.addCommand({pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC}, (async (message, match) => {
 
     if (match[1] === '') {
 

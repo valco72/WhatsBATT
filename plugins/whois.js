@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const BAT = require('../events');
 const { MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 const Axios = require('axios');
 const fs = require('fs');
@@ -11,7 +11,7 @@ const Lang = Language.getString('whois'); // Language Support
 
 if (CON.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
+    BAT.addCommand({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 
@@ -48,7 +48,7 @@ if (CON.WORKTYPE == 'private') {
 }
 else if (CON.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'whois', fromMe: false, desc: Lang.PL_DESC }, async (message, match) => { 
+    BAT.addCommand({ pattern: 'whois', fromMe: false, desc: Lang.PL_DESC }, async (message, match) => { 
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 
@@ -82,7 +82,7 @@ else if (CON.WORKTYPE == 'public') {
             );
         }
     });
-    Asena.addCommand({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC, dontAddCommandList: true }, async (message, match) => { 
+    BAT.addCommand({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC, dontAddCommandList: true }, async (message, match) => { 
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 

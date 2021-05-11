@@ -1,4 +1,4 @@
-const Asena = require('../events')
+const BAT = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
 const axios = require('axios')
 const cn = require('../config');
@@ -10,7 +10,7 @@ const Tlang = Language.getString('tiktok')
 
 if (cn.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'insta ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -36,7 +36,7 @@ if (cn.WORKTYPE == 'private') {
     }));
 
     /*
-    Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
+    BAT.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
         const userName = match[1]
         if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
         await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
@@ -62,7 +62,7 @@ if (cn.WORKTYPE == 'private') {
 }
 else if (cn.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: Lang.DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: Lang.DESC }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -86,7 +86,7 @@ else if (cn.WORKTYPE == 'public') {
         });
 
     }));
-    Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: true, desc: Lang.DESC, dontAddCommandList: true }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'insta ?(.*)', fromMe: true, desc: Lang.DESC, dontAddCommandList: true }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -111,7 +111,7 @@ else if (cn.WORKTYPE == 'public') {
 
     }));
     /*
-    Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: false, desc: Tlang.TİKTOK }, async (message, match) => {
+    BAT.addCommand({ pattern: 'tiktok ?(.*)', fromMe: false, desc: Tlang.TİKTOK }, async (message, match) => {
         const userName = match[1]
         if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
         await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
@@ -133,7 +133,7 @@ else if (cn.WORKTYPE == 'public') {
           )
       },
     )
-    Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
+    BAT.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
         const userName = match[1]
         if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
         await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)

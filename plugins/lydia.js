@@ -3,11 +3,11 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+WhatsBAT - Yusuf Usta
 */
 
 /*
-const Asena = require('../events');
+const BAT = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 const {LydiaDB} = require('./sql/lydia');
@@ -16,9 +16,9 @@ const {LydiaAI} = require('coffeehouse');
 const Language = require('../language');
 const Lang = Language.getString('lydia');
 
-Asena.addCommand({pattern: 'addlydia$', fromMe: true, desc: Lang.ADDLYDIA_DESC}, (async (message, match) => {
+BAT.addCommand({pattern: 'addlydia$', fromMe: true, desc: Lang.ADDLYDIA_DESC}, (async (message, match) => {
     if (!message.reply_message) return await message.reply(Lang.NEED_REPLY);
-    if (Config.COFFEEHOUSE_API_KEY == 'true') return await message.client.sendMessage(message.jid, '```You Must Set an API KEY!```\nhttps://github.com/phaticusthiccy/WhatsAsenaDuplicated/wiki/LYDIA-API-KEY', MessageType.text);
+    if (Config.COFFEEHOUSE_API_KEY == 'true') return await message.client.sendMessage(message.jid, '```You Must Set an API KEY!```\nhttps://github.com/phaticusthiccy/WhatsBATDuplicated/wiki/LYDIA-API-KEY', MessageType.text);
 
     var unix = Date.now() / 1000 | 0;
 
@@ -40,9 +40,9 @@ Asena.addCommand({pattern: 'addlydia$', fromMe: true, desc: Lang.ADDLYDIA_DESC},
     return await message.reply(Lang.ENABLED_LYDIA);
 }));
 
-Asena.addCommand({pattern: 'rmlydia$', fromMe: true, desc: Lang.RMLYDIA_DESC}, (async (message, match) => {
+BAT.addCommand({pattern: 'rmlydia$', fromMe: true, desc: Lang.RMLYDIA_DESC}, (async (message, match) => {
     if (!message.reply_message) return await message.reply(Lang.NEED_REPLY);
-    if (Config.COFFEEHOUSE_API_KEY == 'true') return await message.client.sendMessage(message.jid, '```You Must Set an API KEY!```\nhttps://github.com/phaticusthiccy/WhatsAsenaDuplicated/wiki/LYDIA-API-KEY', MessageType.text);
+    if (Config.COFFEEHOUSE_API_KEY == 'true') return await message.client.sendMessage(message.jid, '```You Must Set an API KEY!```\nhttps://github.com/phaticusthiccy/WhatsBATDuplicated/wiki/LYDIA-API-KEY', MessageType.text);
 
     var unix = Date.now() / 1000 | 0;
 
@@ -69,7 +69,7 @@ Asena.addCommand({pattern: 'rmlydia$', fromMe: true, desc: Lang.RMLYDIA_DESC}, (
     return await message.reply(Lang.DISABLED);
 }));
 
-Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {   
+BAT.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {   
     if (Config.COFFEEHOUSE_API_KEY === false) return;
     var unix = Date.now() / 1000 | 0;
 

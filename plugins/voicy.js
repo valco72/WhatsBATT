@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const BAT = require('../events');
 const ffmpeg = require('fluent-ffmpeg');
 const fs = require('fs');
 const { MessageType } = require('@adiwajshing/baileys');
@@ -38,7 +38,7 @@ const convertToWav = file => {
 
 if (conf.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
 
         try {
             if (message.reply_message) {
@@ -77,7 +77,7 @@ if (conf.WORKTYPE == 'private') {
 }
 if (conf.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
 
         try {
             if (message.reply_message) {
@@ -113,7 +113,7 @@ if (conf.WORKTYPE == 'public') {
 
 
     }));
-    Asena.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         try {
             if (message.reply_message) {

@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const BAT = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
@@ -11,7 +11,7 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC}, (async (message, match) => {
+    BAT.addCommand({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
@@ -265,7 +265,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'tblend ?(.*)', fromMe: false, desc: Lang.T_DESC}, (async (message, match) => {
+    BAT.addCommand({pattern: 'tblend ?(.*)', fromMe: false, desc: Lang.T_DESC}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
@@ -516,7 +516,7 @@ else if (Config.WORKTYPE == 'public') {
             return await message.client.sendMessage(message.jid,Lang.T_FALSE, MessageType.text);
         }
     }));
-    Asena.addCommand({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC, dontAddCommandList: true}, (async (message, match) => {
+    BAT.addCommand({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 

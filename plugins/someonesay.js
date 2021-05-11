@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const BAT = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -9,7 +9,7 @@ const Lang = Language.getString('ttp');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'animesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'animesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -19,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'changesay ?(.*)', fromMe: true, desc: Lang.CHANGE_DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'changesay ?(.*)', fromMe: true, desc: Lang.CHANGE_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -29,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: true, desc: Lang.TRUMP_DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: true, desc: Lang.TRUMP_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'animesay ?(.*)', fromMe: false, desc: Lang.ANIME_DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'animesay ?(.*)', fromMe: false, desc: Lang.ANIME_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -51,7 +51,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'changesay ?(.*)', fromMe: false, desc: Lang.CHANGE_DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'changesay ?(.*)', fromMe: false, desc: Lang.CHANGE_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -61,7 +61,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: false, desc: Lang.TRUMP_DESC }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: false, desc: Lang.TRUMP_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -70,7 +70,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsBAT' })
 
     }));
-    Asena.addCommand({ pattern: 'animesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC, dontAddCommandList: true }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'animesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -80,7 +80,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'changesay ?(.*)', fromMe: true, desc: Lang.CHANGE_DESC, dontAddCommandList: true }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'changesay ?(.*)', fromMe: true, desc: Lang.CHANGE_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -90,7 +90,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: true, desc: Lang.TRUMP_DESC, dontAddCommandList: true }, (async (message, match) => {
+    BAT.addCommand({ pattern: 'trumpsay ?(.*)', fromMe: true, desc: Lang.TRUMP_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 

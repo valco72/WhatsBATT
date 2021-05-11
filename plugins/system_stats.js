@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const BAT = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
@@ -11,7 +11,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    BAT.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```User```\n\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n*Co-Developer:* wa.me/905436254003' , MessageType.text);
@@ -32,7 +32,7 @@ if (Config.WORKTYPE == 'private') {
         }
     }));
 
-    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    BAT.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
@@ -42,7 +42,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    BAT.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
           await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```User```\n\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n*Co-Developer:* wa.me/905436254003' , MessageType.text);
@@ -63,7 +63,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     }));
 
-    Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    BAT.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
@@ -71,7 +71,7 @@ else if (Config.WORKTYPE == 'public') {
         );
     }));
 
-    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, dontAddCommandList: true}, (async (message, match) => {
+    BAT.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
           await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```User```\n\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n*Co-Developer:* wa.me/905436254003' , MessageType.text);
@@ -92,7 +92,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     }));
 
-    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
+    BAT.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
