@@ -3,7 +3,7 @@ const {WAConnection} = require('@adiwajshing/baileys');
 const {StringSession} = require('./WhatsBAT/');
 const fs = require('fs');
 
-async function whatsAsena () {
+async function whatsBAT () {
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.logger.level = 'warn';
@@ -36,4 +36,4 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     await conn.connect();
 }
 
-whatsAsena()
+whatsBAT()
